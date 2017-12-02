@@ -1,4 +1,8 @@
-advent = open('C:\\Users\LStoner\Desktop\Advent-Of-Code-2017\Input\Day 1 Input.txt')
+import os.path
+from os.path import dirname, abspath
+
+path = os.path.join(dirname(dirname(abspath(__file__))), 'Input/Day 1 Input.txt')
+advent = open(path)
 
 for line in advent:
     puzzle = line.strip()
